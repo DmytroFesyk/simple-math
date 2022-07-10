@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>simple-math</artifactId>
-    <groupId>com.github.dmytrofesyk.math</groupId>
+    <groupId>io.github.dmytrofesyk.math</groupId>
     <version>0.0.1-SNAPSHOT</version>
 
     <name>JVM simple math</name>
