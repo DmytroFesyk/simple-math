@@ -1,0 +1,44 @@
+# Build
+target
+gradle
+.gradle
+
+# IntelliJ
+/.idea
+*.ipr
+*.iws
+*.iml
+
+# Eclipse
+.springBeans
+.project
+.settings
+.classpath
+
+# Netbeans
+nb-configuration.xml
+
+# Mac
+.DS_Store
+
+# Maven wrapper
+/.mvn/wrapper
+/.mvn/timing.properties
+
+.launch
+.metadata
+/.classpath
+projectFilesBackup/
+/cache
+/.project
+/.settings
+/**/*.log
+/.checkstyle
+/.pmd
+/.externalToolBuilders
+.atomist.yml
+.atomist/node_modules
+
+/test.html
+/test/_js/nodejs/node_modules
+*.orig
