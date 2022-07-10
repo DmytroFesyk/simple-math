@@ -58,7 +58,7 @@
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <maven-scm-provider-gitexe.version>1.13.0</maven-scm-provider-gitexe.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
         <maven-javadoc-plugin.version>3.4.0</maven-javadoc-plugin.version>
         <dependency-check-maven.version>7.1.0</dependency-check-maven.version>
@@ -80,7 +80,7 @@
                 <executions>
                     <execution>
                         <id>compile</id>
-                        <phase>compile</phase>
+                        <phase>process-sources</phase>
                         <goals>
                             <goal>compile</goal>
                         </goals>
@@ -204,6 +204,10 @@
     <profiles>
         <profile>
             <id>maven-central-deploy</id>
+<!--            <properties>-->
+<!--                <gpg.executable>gpg2</gpg.executable>-->
+<!--                <gpg.passphrase>jvm-content-comparator#sdfrg!#$lnv</gpg.passphrase>-->
+<!--            </properties>-->
             <build>
                 <plugins>
                     <!--required plugins to deploy library to maven central-->
@@ -224,6 +228,8 @@
                                     <gpgArguments>
                                         <arg>--pinentry-mode</arg>
                                         <arg>loopback</arg>
+<!--                                        <keyname>0xA1B13BCF</keyname>-->
+<!--                                        <passphraseServerId>jvm-content-comparator#sdfrg!#$lnv</passphraseServerId>-->
                                     </gpgArguments>
                                 </configuration>
                             </execution>
