@@ -4,7 +4,7 @@
 
     <artifactId>simple-math</artifactId>
     <groupId>io.github.dmytrofesyk.math</groupId>
-    <version>0.0.3</version>
+    <version>0.0.3-SNAPSHOT</version>
 
     <name>JVM simple math</name>
     <description>This is a small library written in kotlin that could helps do mathematical operations</description>
