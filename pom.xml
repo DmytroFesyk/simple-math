@@ -186,7 +186,7 @@
                 <version>${dokka.version}</version>
                 <executions>
                     <execution>
-                        <phase>pre-site</phase>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>javadocJar</goal>
                         </goals>
