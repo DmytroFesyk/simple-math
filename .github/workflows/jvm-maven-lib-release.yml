@@ -1,9 +1,4 @@
-#
-# SRE workflow for releasing a package to GitHub packages
-#
-# This file is centrally managed by the SRE workflows repository: https://github.com/RoyalAholdDelhaize/sre-github-workflows
-# Please don't modify this file directly! Any changes to this file may be overwritten by the central workflow distribution process
-#
+
 
 name: Release
 
